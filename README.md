@@ -1,3 +1,3 @@
 # Automator
 
-A tool for automating data formatting in materials science labs.
+A tool for automating the detection of phrases in government contracts.
