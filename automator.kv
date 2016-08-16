@@ -1,0 +1,24 @@
+Automator:
+  orientation: 'vertical'
+  Label:
+    size_hint_y: 2
+    font_size: 30
+    text: 'Choose a phrase to search for'
+  TextInput:
+    id: phrase
+    size_hint_y: 1
+    font_size: 14
+    text: 'The contractor shall'
+    multiline: False
+  Label:
+    size_hint_y: 2
+    font_size: 30
+    text: 'Choose a file to process'
+  FileChooserListView:
+    id: contract
+    size_hint_y: 6
+  Button:
+    size_hint_y: 1
+    font_size: 14
+    text: 'Submit'
+    on_press: root.parse_contract(contract.selection[0], phrase.text)
